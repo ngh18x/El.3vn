@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El3VN – Streetwear & Essentials | Offizieller Online-Shop</title>
+<meta name="description" content="El3VN: Minimalistische Streetwear & Essentials. Shoppe Hoodies, T-Shirts und Caps in deutscher, englischer und arabischer Sprache. DHL & Hermes Versand.">
+<meta name="keywords" content="El3VN, Streetwear, Mode, Hoodies, T-Shirts, Caps, Online-Shop, DHL, Hermes, Mehrsprachig">
+<meta name="author" content="El3VN">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<!-- Open Graph Meta -->
+<meta property="og:title" content="El3VN – Streetwear & Essentials">
+<meta property="og:description" content="Minimalistische Streetwear in DE/EN/AR. Versand mit DHL & Hermes.">
+<meta property="og:image" content="https://example.com/logo-preview.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://el3vn.netlify.app">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="El3VN – Streetwear & Essentials">
+<meta name="twitter:description" content="Minimalistische Streetwear in DE/EN/AR. Versand mit DHL & Hermes.">
+<meta name="twitter:image" content="https://example.com/logo-preview.png">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#">
+    <img src="logo.svg" alt="El3VN Logo" class="logo">
+    <span>El3VN</span>
+  </a>
+  <nav class="nav">
+    <a href="#products" data-i18n="nav_products">Produkte</a>
+    <a href="#about" data-i18n="nav_about">Über uns</a>
+    <a href="#contact" data-i18n="nav_contact">Kontakt</a>
+  </nav>
+  <div class="lang-switch">
+    <button data-lang="de">DE</button>
+    <button data-lang="en">EN</button>
+    <button data-lang="ar">AR</button>
+  </div>
+  <button id="cart-btn">🛒 <span id="cart-count">0</span></button>
+</header>
+
+<main>
+  <section class="hero">
+    <h1 data-i18n="hero_title">Streetwear & Essentials – minimal, hochwertig, fair.</h1>
+    <p data-i18n="hero_subtitle">Shoppe jetzt unsere neuesten Styles.</p>
+    <a class="btn btn-primary" href="#products" data-i18n="hero_cta">Jetzt shoppen</a>
+  </section>
+
+  <section id="products" class="products">
+    <h2 data-i18n="products_title">Produkte</h2>
+    <div class="product-grid" id="product-grid"></div>
+  </section>
+
+  <section id="about" class="about">
+    <h2 data-i18n="about_title">Über El3VN</h2>
+    <p data-i18n="about_text">Wir sind eine unabhängige Marke. Kleine Chargen, faire Produktion, plastikfreie Verpackung.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 data-i18n="contact_title">Kontakt</h2>
+    <form id="contact-form">
+      <label data-i18n="contact_name">Dein Name</label>
+      <input type="text" required>
+      <label data-i18n="contact_email">E-Mail</label>
+      <input type="email" required>
+      <label data-i18n="contact_message">Nachricht</label>
+      <textarea rows="4" required></textarea>
+      <button class="btn" type="submit" data-i18n="contact_send">Senden</button>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> El3VN</p>
+</footer>
+
+<div id="cart-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 data-i18n="cart_title">Warenkorb</h2>
+    <div id="cart-items"></div>
+    <div class="cart-total">
+      <span data-i18n="cart_total">Gesamt</span>: <strong id="cart-total">€0,00</strong>
+    </div>
+    <button id="checkout-btn" class="btn btn-primary" data-i18n="cart_checkout">Zur Kasse</button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

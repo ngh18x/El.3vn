@@ -1,0 +1,19 @@
+
+body{margin:0;font-family:sans-serif;background:#0b0b0c;color:#fff}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;background:#111;position:sticky;top:0}
+.brand{display:flex;align-items:center;gap:8px;color:#fff;text-decoration:none;font-weight:bold}
+.logo{height:32px}
+.nav a{color:#bbb;text-decoration:none;margin:0 10px}
+.lang-switch button{margin-left:4px;padding:4px 8px;border:1px solid #444;background:#222;color:#fff;cursor:pointer}
+.hero{text-align:center;padding:40px;background:#222}
+.btn{padding:8px 14px;border:none;border-radius:6px;cursor:pointer}
+.btn-primary{background:#e6ff57;color:#000;font-weight:600}
+.products,.about,.contact{padding:20px}
+.product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.product{background:#1a1a1a;padding:10px;border-radius:8px}
+.product img{max-width:100%;border-radius:8px}
+.modal{display:none;position:fixed;z-index:100;left:0;top:0;width:100%;height:100%;overflow:auto;background:rgba(0,0,0,0.7)}
+.modal-content{background:#1a1a1a;margin:10% auto;padding:20px;border:1px solid #888;width:90%;max-width:500px;border-radius:8px}
+.close{color:#aaa;float:right;font-size:28px;font-weight:bold;cursor:pointer}
+.close:hover{color:#fff}
+.cart-total{margin-top:10px;font-size:18px}
